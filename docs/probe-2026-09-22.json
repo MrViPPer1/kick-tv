@@ -1,0 +1,79 @@
+{
+  "at": "2026-09-22T19:53:20.068Z",
+  "slug": "xqc",
+  "channel": {
+    "status": 200,
+    "cors": "null",
+    "live": true
+  },
+  "tokenSecondsRemaining": 599,
+  "liveMaster": {
+    "status": 200,
+    "cors": null,
+    "redirected": false,
+    "ms": 121,
+    "hls": true,
+    "variants": [
+      "#EXT-X-STREAM-INF:BANDWIDTH=1427999,RESOLUTION=852x480,CODECS=\"avc1.4D401F,mp4a.40.2\",VIDEO=\"480p30\",FRAME-RATE=30.000",
+      "#EXT-X-STREAM-INF:BANDWIDTH=630000,RESOLUTION=640x360,CODECS=\"avc1.4D401F,mp4a.40.2\",VIDEO=\"360p30\",FRAME-RATE=30.000",
+      "#EXT-X-STREAM-INF:BANDWIDTH=230000,RESOLUTION=284x160,CODECS=\"avc1.4D401F,mp4a.40.2\",VIDEO=\"160p30\",FRAME-RATE=30.000",
+      "#EXT-X-STREAM-INF:BANDWIDTH=9026664,RESOLUTION=1920x1080,CODECS=\"avc1.64002A,mp4a.40.2\",VIDEO=\"chunked\",FRAME-RATE=60.000",
+      "#EXT-X-STREAM-INF:BANDWIDTH=3422999,RESOLUTION=1280x720,CODECS=\"avc1.4D401F,mp4a.40.2\",VIDEO=\"720p60\",FRAME-RATE=60.000"
+    ],
+    "segments": [],
+    "prefetch": 0,
+    "appleParts": 0,
+    "endList": false
+  },
+  "liveMedia": {
+    "status": 200,
+    "cors": "*",
+    "redirected": false,
+    "ms": 150,
+    "hls": true,
+    "variants": [],
+    "targetDuration": "#EXT-X-TARGETDURATION:6",
+    "segments": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "prefetch": 2,
+    "appleParts": 0,
+    "endList": false
+  },
+  "videos": {
+    "status": 200,
+    "cors": "null",
+    "count": 25
+  },
+  "vodMaster": {
+    "status": 200,
+    "cors": "*",
+    "redirected": false,
+    "ms": 565,
+    "hls": true,
+    "variants": [
+      "#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=9104877,CODECS=\"avc1.64002A,mp4a.40.2\",RESOLUTION=1920x1080,VIDEO=\"1080p60\",FRAME-RATE=60.000",
+      "#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=3483983,CODECS=\"avc1.4D401F,mp4a.40.2\",RESOLUTION=1280x720,VIDEO=\"720p60\",FRAME-RATE=60.000",
+      "#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1488983,CODECS=\"avc1.4D401F,mp4a.40.2\",RESOLUTION=852x480,VIDEO=\"480p30\",FRAME-RATE=30.000",
+      "#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=630000,CODECS=\"avc1.4D401F,mp4a.40.2\",RESOLUTION=640x360,VIDEO=\"360p30\",FRAME-RATE=30.000",
+      "#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=230000,CODECS=\"avc1.4D401F,mp4a.40.2\",RESOLUTION=284x160,VIDEO=\"160p30\",FRAME-RATE=30.000"
+    ],
+    "segments": [],
+    "prefetch": 0,
+    "appleParts": 0,
+    "endList": false
+  }
+}

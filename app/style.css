@@ -1,0 +1,105 @@
+* { box-sizing: border-box; }
+html, body { width:100%; height:100%; margin:0; overflow:hidden; background:#071321; color:#f3f5f7; font-family:Arial,sans-serif; font-size:24px; }
+.hidden { display:none !important; }
+button, input, textarea { font:inherit; }
+button { min-height:64px; padding:14px 25px; border:2px solid #344254; border-radius:9px; background:#152639; color:#eef3f8; cursor:pointer; line-height:1.25; }
+button:hover { background:#263b50; }
+button:focus, input:focus, textarea:focus { outline:4px solid #c4ff9c; outline-offset:5px; }
+button:disabled { opacity:.45; cursor:default; }
+button.primary { background:#a4ef73; color:#10210a; border-color:#a4ef73; font-weight:bold; }
+button.primary:hover { background:#c4ff9c; }
+button.quiet { background:transparent; }
+h1 { margin:12px 0 18px; font-size:64px; letter-spacing:-2px; line-height:1.1; }
+h2 { font-size:30px; line-height:1.4; margin:18px 0; }
+p { line-height:1.5; margin:12px 0; }
+.muted { color:#adbdce; }
+.eyebrow { color:#b3c4d7; font-size:18px; letter-spacing:4px; font-weight:bold; }
+#navigation { height:120px; padding:24px 4.5%; display:flex; align-items:center; border-bottom:1px solid #253345; }
+.brand { font-size:30px; font-weight:bold; letter-spacing:2px; white-space:nowrap; }
+.brand-mark { background:#a4ef73; color:#10210a; display:inline-block; padding:4px 9px; margin-right:12px; }
+.brand-tv { color:#adbdce; font-weight:normal; }
+nav { margin-left:70px; }
+.nav-button { margin-right:12px; border-color:transparent; background:transparent; min-width:120px; }
+.nav-button.current { color:#b8f58d; background:#1c302c; }
+.unofficial { margin-left:auto; color:#a0afc1; font-size:15px; letter-spacing:2px; }
+main { height:calc(100vh - 178px); }
+.page { height:100%; padding:42px 6% 50px; overflow:auto; }
+#home { background:linear-gradient(135deg,#071321,#10263b); }
+.hero { text-align:center; max-width:1300px; margin:0 auto; padding:10px 0 20px; }
+.profile-row { display:flex; align-items:center; justify-content:center; margin:22px 0; }
+.profile-row h1 { margin:0; max-width:900px; overflow:hidden; text-overflow:ellipsis; }
+.avatar { width:96px; height:96px; border-radius:50%; background:#203044; object-fit:cover; margin-right:24px; }
+.badge { display:inline-block; background:#273749; color:#d3dce6; border-radius:5px; padding:8px 16px; font-size:18px; letter-spacing:2px; font-weight:bold; }
+.badge.live { background:#a4ef73; color:#10210a; }
+#home-title { max-width:1050px; margin:24px auto 12px; max-height:84px; overflow:hidden; }
+.actions { margin:24px 0; display:flex; flex-wrap:wrap; }
+.actions button { margin:0 14px 14px 0; }
+.hero .actions { justify-content:center; }
+.message { color:#d2dfec; min-height:0; }
+.message:empty { display:none; }
+.message.error { color:#ffd4ae; }
+.saved-section { max-width:1300px; margin:18px auto; border-top:1px solid #344254; padding-top:14px; }
+.section-title { font-size:25px; margin:12px 0 22px; }
+.saved-list { display:flex; flex-wrap:wrap; }
+.saved-list button { margin:0 16px 16px 0; }
+.saved-list button.selected { border-color:#a4ef73; }
+footer { height:58px; padding:16px 5%; font-size:18px; color:#a8b6c7; border-top:1px solid #253345; }
+footer span { margin:0 16px; color:#536477; }
+#search-form { margin:38px 0 20px; max-width:1100px; }
+label { display:block; margin-bottom:16px; }
+.search-row { display:flex; }
+input { background:#142438; border:2px solid #536477; border-radius:9px; color:#fff; padding:18px 24px; width:75%; min-width:0; margin-right:20px; }
+.result-card { display:flex; align-items:center; width:100%; max-width:1100px; padding:25px; margin-top:30px; text-align:left; }
+.result-copy { display:block; }
+.result-copy strong { display:block; font-size:36px; margin-bottom:10px; }
+.channel-header { display:flex; align-items:center; margin-bottom:26px; }
+.channel-header h1 { margin:6px 0 14px; }
+.channel-header .eyebrow { margin:0; }
+.save-button { margin-left:auto; }
+#channel-title { max-width:1300px; max-height:84px; overflow:hidden; }
+.section-heading { display:flex; align-items:center; justify-content:space-between; border-top:1px solid #344254; padding-top:18px; }
+.vod-list { display:flex; flex-wrap:wrap; margin:0 -10px; }
+.vod-card { width:calc(33.333% - 20px); margin:0 10px 26px; padding:0; text-align:left; overflow:hidden; background:#152639; }
+.vod-image { width:100%; height:180px; object-fit:cover; background:#253345; display:block; }
+.vod-copy { padding:18px; display:block; }
+.vod-title { display:block; font-size:23px; height:62px; overflow:hidden; line-height:1.35; }
+.vod-meta { display:block; font-size:18px; color:#adbdce; margin-top:12px; }
+.settings-panel { border-top:1px solid #344254; padding:12px 0 20px; max-width:1300px; }
+#watch { position:fixed; top:0; left:0; width:100%; height:100%; background:#000; }
+#video { width:100%; height:100%; object-fit:contain; }
+#player-message { position:absolute; left:15%; right:15%; top:25%; padding:24px; background:rgba(0,0,0,.88); border-radius:10px; text-align:center; font-size:27px; }
+#player-message:empty { display:none; }
+#player-controls { position:absolute; bottom:0; left:0; right:0; padding:30px 5%; background:rgba(4,12,21,.58); text-shadow:0 1px 3px #000; }
+#player-controls button { background:rgba(15,28,43,.62); border-color:rgba(220,235,250,.55); }
+#player-controls button:focus, #player-controls button:hover { background:rgba(48,76,58,.82); }
+#player-title { font-size:30px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+#player-controls .actions { margin:18px 0 0; }
+.remote-hint { font-size:18px; color:#adbdce; }
+#blackout { position:absolute; top:0; left:0; width:100%; height:100%; background:#000; }
+#blackout p { position:absolute; bottom:45px; width:100%; text-align:center; color:#79838e; font-size:20px; }
+.modal { position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.85); display:flex; align-items:center; justify-content:center; z-index:10; }
+.dialog { width:85%; padding:36px; background:#102033; border:2px solid #536477; border-radius:12px; }
+textarea { width:100%; height:45vh; color:#d1e9c1; background:#071321; padding:20px; font-size:18px; margin-bottom:24px; resize:none; }
+@media (max-width:1400px) {
+  html, body { font-size:20px; }
+  #navigation { height:90px; padding-top:16px; padding-bottom:16px; }
+  main { height:calc(100vh - 140px); }
+  footer { height:50px; font-size:16px; padding:14px 5%; }
+  .page { padding-top:28px; }
+  h1 { font-size:48px; } h2 { font-size:25px; }
+  button { min-height:54px; padding:12px 18px; }
+  .avatar { width:76px; height:76px; }
+  .hero { padding:0; } .hero .actions { margin:14px 0 4px; }
+  .profile-row { margin:16px 0; } #home-title { margin-top:18px; max-height:70px; }
+  .saved-section { margin-top:0; padding-top:0; }
+  .saved-section .section-title { margin:12px 0 14px; }
+  .vod-image { height:145px; } .vod-title { font-size:20px; height:54px; }
+  .unofficial { font-size:12px; } nav { margin-left:40px; }
+  #player-controls { padding-top:14px; padding-bottom:14px; }
+}
+@media (max-width:900px) {
+  .unofficial { display:none; } nav { margin-left:auto; }
+  .nav-button { min-width:0; margin-right:2px; }
+  .brand { font-size:22px; } .brand-mark { margin-right:4px; }
+  .vod-card { width:calc(50% - 20px); }
+}

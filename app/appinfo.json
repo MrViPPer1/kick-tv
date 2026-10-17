@@ -1,0 +1,13 @@
+{
+  "id": "com.kickapp.unified",
+  "version": "2.0.1",
+  "vendor": "Independent developer",
+  "type": "web",
+  "main": "index.html",
+  "title": "Kick TV",
+  "icon": "icon.png",
+  "largeIcon": "bicon.png",
+  "iconColor": "#071321",
+  "resolution": "1280x720",
+  "disableBackHistoryAPI": true
+}

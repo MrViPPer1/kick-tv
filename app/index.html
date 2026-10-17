@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kick TV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="shell">
+    <header id="navigation">
+      <div class="brand"><span class="brand-mark">K</span> KICK <span class="brand-tv">TV</span></div>
+      <nav aria-label="Main navigation">
+        <button id="nav-home" class="nav-button">Home</button>
+        <button id="nav-search" class="nav-button">Search</button>
+        <button id="nav-account" class="nav-button">Account</button>
+      </nav>
+      <span class="unofficial">UNOFFICIAL CLIENT</span>
+    </header>
+    <main>
+      <section id="home" class="page" aria-label="Home">
+        <div class="hero">
+          <p class="eyebrow">YOUR FRONT ROW</p>
+          <div id="home-profile" class="profile-row"><img id="home-avatar" class="avatar" src="icon.png" alt=""><h1 id="home-name">Your next stream.</h1></div>
+          <span id="home-status" class="badge">WELCOME</span>
+          <h2 id="home-title">Pick a streamer. Make yourself at home.</h2>
+          <p id="home-meta" class="muted">Find your favorites on Kick and save them here.</p>
+          <p id="home-message" class="message" role="status"></p>
+          <div class="actions">
+            <button id="home-watch" class="primary">Find a streamer</button>
+            <button id="home-vods" class="hidden">Past broadcasts</button>
+            <button id="home-channel" class="hidden">Streamer page</button>
+            <button id="home-refresh" class="quiet hidden">Refresh</button>
+          </div>
+        </div>
+        <div id="saved-section" class="saved-section hidden"><h2 class="section-title">On your home page</h2><div id="saved-list" class="saved-list"></div></div>
+      </section>
+      <section id="search" class="page hidden" aria-label="Search">
+        <p class="eyebrow">FIND YOUR PEOPLE</p><h1>Search Kick</h1>
+        <p class="muted">Enter an exact username to find their channel.</p>
+        <form id="search-form"><label for="search-input">Streamer username</label><div class="search-row"><input id="search-input" type="text" maxlength="25" placeholder="e.g. xqc" autocomplete="off" autocapitalize="off" spellcheck="false"><button class="primary" id="search-submit" type="submit">Search</button></div></form>
+        <p id="search-message" class="message" role="status"></p><div id="search-results"></div>
+      </section>
+      <section id="channel" class="page hidden" aria-label="Streamer page">
+        <div class="channel-header"><img id="channel-avatar" class="avatar" src="icon.png" alt=""><div><p class="eyebrow">STREAMER</p><h1 id="channel-name"></h1><span id="channel-status" class="badge"></span></div><button id="channel-save" class="save-button">Add to home page</button></div>
+        <h2 id="channel-title"></h2><p id="channel-meta" class="muted"></p>
+        <div class="actions"><button id="channel-watch" class="primary">Watch live</button><button id="channel-refresh">Refresh</button></div>
+        <p id="channel-message" class="message" role="status"></p>
+        <div class="section-heading"><h2 class="section-title">Past broadcasts</h2><span id="vod-count" class="muted"></span></div>
+        <p id="vod-message" class="message" role="status"></p><div id="vod-list" class="vod-list"></div>
+      </section>
+      <section id="account" class="page hidden" aria-label="Account">
+        <p class="eyebrow">MAKE IT YOURS</p><h1>Account &amp; preferences</h1>
+        <div class="settings-panel"><h2>Watching as a guest</h2><p>Your saved streamers stay on this TV. Kick sign-in is not available in this build.</p><p id="storage-message" class="muted"></p></div>
+        <div class="settings-panel"><h2>Playback</h2><p class="muted">Start quickly, then watch in HD. Quality adapts from 720p up to the creator’s source quality.</p><div class="actions"><button id="engine-setting">Player: Automatic</button><button id="quality-setting">Quality: HD · 720p to source</button></div><p class="muted">If HD is unavailable, the highest offered quality is used. The native TV player manages its own quality.</p></div>
+        <div class="settings-panel"><h2>Remote shortcuts</h2><p class="muted">Red turns the picture off while audio continues. Green reconnects playback and keeps your replay position. Use Back to leave the player.</p></div>
+      </section>
+    </main>
+    <footer>Arrows to move <span>•</span> OK to select <span>•</span> Back to return</footer>
+  </div>
+  <section id="watch" class="hidden" aria-label="Video player">
+    <video id="video" playsinline preload="auto"></video>
+    <div id="blackout" class="hidden"><p>Screen dimmed · Red or Back to return</p></div>
+    <div id="player-message" role="status"></div>
+    <div id="player-controls" class="hidden">
+      <p id="player-title"></p><p id="player-time" class="muted"></p>
+      <div class="actions"><button id="player-toggle">Play / pause</button><button id="player-rewind">−30 seconds</button><button id="player-forward">+30 seconds</button><button id="player-live">Go live</button><button id="player-quality">Quality: HD</button><button id="player-retry">Reconnect</button><button id="player-back">Back</button></div>
+      <p class="remote-hint">OK: select / pause · Up: controls · Red: screen off · Green: reconnect · Replay: ← / → skips when controls are hidden; ⏪ / ⏩ anytime</p>
+    </div>
+  </section>
+  <script src="vendor/hls-1.4.10.min.js"></script>
+  <script src="js/core.js"></script><script src="js/api.js"></script><script src="js/player.js"></script><script src="js/navigation.js"></script><script src="js/app.js"></script>
+</body>
+</html>
